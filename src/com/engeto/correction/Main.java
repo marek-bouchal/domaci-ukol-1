@@ -23,16 +23,14 @@ public class Main {
     }
 
     public static void ukol5() {
-        BigDecimal cena = new BigDecimal("0");
-        BigDecimal j = new BigDecimal("0.1"); // Nastavíme do proměnné hodnotu 0
+        BigDecimal cena = new BigDecimal("0"); // Nastavíme do proměnné hodnotu 0
+        BigDecimal j = new BigDecimal("0.1"); 
         // Desetkrát přičteme hodnotu jedna desetina (0,1):
         for (int i = 0; i < 10; i++) {
             cena = cena.add(j);
-               // operátor "+=" znamená: přičti ke stávající
-               // hodnotě navíc 0.1
+
         }
         System.out.println(cena);
-        // Má vypsat "1.0". Ale vypíše "0.9999" !!!
     }
 
     public static void ukol6() {
